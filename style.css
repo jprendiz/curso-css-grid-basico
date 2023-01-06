@@ -2,24 +2,28 @@
     border: 5px solid #e1bee7;
     background-color: #FFF1FF;
     display: grid;
-    /* grid-template-columns: 100px 200px 300px;
-    grid-template-rows: 150px 250px; */
-
+    grid-template-columns: 100px 200px 300px;
+    grid-template-rows: repeat(3, 75px);
     gap: 15px;
-    grid-template-columns: 150px 150px ;
-    /* grid-template-columns: 150px 150px 150px; */
-    grid-auto-rows: 150px;
     height: 600px;
-    /* row-gap: 15px;
-    column-gap: 30px; */
 
     place-content: center;
-    justify-items: end;
-    align-items: end;
 }
 
-.item {
-    border: 5px solid #00bcd4;
-    font-size: 4rem;
+.item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
+.item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    grid-row: 2/4;
+}
+.item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    grid-area: 2/2/4/4;
+}
